@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&family=Montserrat:wght@300;400&family=Open+Sans:wght@300&family=Raleway:ital,wght@0,800;1,800&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease;
+}
+
+:root {
+  ---primary: hsl(94, 59%, 35%);
+  --hover: #bdf094;
+  --palegreen: hsl(96, 75%, 89%);
+  --white: hsl(0, 05, 100%);
+  --black: hsl(0, 0%, 18%);
+  --textcolor: hsl(240, 1%, 48%);
+  --bgcolor: hsl(220, 10%, 94%);
+  --greyText: rgb(150, 149, 149);
+  --inputcolor: hsl(330, 12%, 97%);
+
+  --fontsize: 2.5rem;
+  --h1font: 1.5rem;
+  --h2font: 1.25rem;
+  --h3font: 1rem;
+  --normalfont: 0.938rem;
+  --smallfont: 0.813rem;
+  --smallestfont: 0.75rem;
+}
+
+html {
+  font-size: 90%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.icon {
+  font-size: var(--h2font);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--inputcolor);
+  padding: 0.8rem 1rem;
+  color: var(--textcolor);
+}
+
+.btn .icon {
+  margin-left: 0.5rem;
+}
+
+.btn:hover {
+  background: var(--palegreen);
+  color: var(---primary);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+.container {
+  position: relative;
+  width: 95vw;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgcolor);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 8px var(--black);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
